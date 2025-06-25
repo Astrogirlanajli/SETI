@@ -1,0 +1,38 @@
+Python tools for SETI 
+ blimpy (Breakthrough Listen I/O Methods for Python)
+Purpose: Reading and processing large radio astronomy data files (especially .fil and .h5 formats from telescopes like GBT, Parkes, MeerKAT).
+
+
+🔹 turboSETI
+Purpose: Searches for narrowband signals with Doppler drift (classic SETI technique).
+
+
+🔹 setigen
+Purpose: Simulate and generate synthetic SETI signals for testing pipelines and ML models.
+
+
+Other SETI & Radio Astronomy Tools
+
+🔹 PySETI
+A Python framework for SETI signal search (alternative to turboSETI).
+
+🔹 SigPyRFI (Signal Processing for RFI Mitigation)
+Purpose: Remove Radio Frequency Interference (RFI) from telescope data.
+
+
+🔹 Voyager (SETI Candidate Management)
+A tool for managing and classifying candidate signals.
+
+
+
+A typical workflow might look like:
+
+Load data → blimpy (read .fil or .h5 files).
+
+RFI removal → SigPyRFI or custom filtering.
+
+Search for narrowband signals → turboSETI.
+
+Classify candidates → ML (scikit-learn / PyTorch).
+
+Visualize → matplotlib / plotly.
